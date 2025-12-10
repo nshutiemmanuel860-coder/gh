@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Interactive JavaScript Website</title>
+  <title>Interactive JavaScript Webpage</title>
   <link rel="icon" href="photo5.jpg">
   <link rel="stylesheet" href="style.css">
 </head>
