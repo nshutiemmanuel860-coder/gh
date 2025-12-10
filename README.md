@@ -46,7 +46,7 @@
       <button id="changeImageBtn">Change Image</button>
     </section>
   </main>
-  <footer id="footer">Created by <strong> NSHUTI Emmanuel</strong>&copy; 2025</footer>
+  <footer id="footer">Created by <strong> NSHUTI Emmanuel</strong> &copy; 2025</footer>
   <script src="script.js"></script>
 </body>
 </html>
