@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive JavaScript Website</title>
+  <link rel="icon" href="photo5.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Interactive Website</h1>
+    <button id="themeToggle">Switch Theme</button>
+     <p id="greeting"></p> <!-- Real-time greeting -->
+  </header>
+  <main>
+    <!-- Form with validation -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form id="signupForm">
+        <label>Email: <input type="email" id="email"></label><br>
+        <label>Password: <input type="password" id="password"></label><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+    <!-- Existing sections (form, image toggle, etc.) -->
+  <!-- Show/Hide Content -->
+  <section>
+    <h2>Show/Hide Content</h2>
+    <button id="toggleContentBtn">Show More</button>
+    <p id="hiddenContent" style="display:none;">
+      This is a show/hide Content.
+    </p>
+  </section>
+  <!-- Automatic Slideshow -->
+  <section>
+    <h2>Image Slideshow</h2>
+    <div class="slideshow">
+      <img id="slideshowImage" src="photo5.jpg" alt="Slideshow Image" width="300">
+    </div>
+  </section>
+    <!-- Image with dynamic change -->
+    <section>
+      <h2>Image Toggle</h2>
+      <img id="toggleImage" src="gymlogo.png" src="photo5.jpg" alt="Interactive Image" width="300">
+      <button id="changeImageBtn">Change Image</button>
+    </section>
+  </main>
+  <footer id="footer">Created by <strong> NSHUTI Emmanuel</strong>&copy; 2025</footer>
+  <script src="script.js"></script>
+</body>
+</html>
