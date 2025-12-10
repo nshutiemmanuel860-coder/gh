@@ -33,18 +33,31 @@ document.getElementById("changeImageBtn").addEventListener("click", function() {
   }
 });
 
-// Real-time greeting
+//Real-time Greeting
 function showGreeting() {
   let now = new Date();
   let hour = now.getHours();
   let greeting = "";
 
   if (hour < 12) {
-    greeting = "Good morning, user!";
+    greeting = "Good morning";
   } else if (hour < 18) {
-    greeting = "Good afternoon, user!";
+    greeting = "Good afternoon";
   } else {
-    greeting = "Good evening, user!";
+    greeting = "Good evening";
+  }
+
+  // Get the email input
+  let email = document.getElementById("email").value;
+
+  if (email !== "") {
+    // Extract only the part before '@'
+    let namePart = email.split("@")[0];
+    // Remove any digits from the name
+    let cleanName = namePart.replace(/[0-9]/g, "");
+    greeting += ", " + cleanName + "!";
+  } else {
+    greeting += ", user!";
   }
 
   document.getElementById("greeting").textContent = greeting;
@@ -52,6 +65,12 @@ function showGreeting() {
 
 // Run greeting when page loads
 window.onload = showGreeting;
+
+// Update greeting when form is submitted
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  showGreeting(); // refresh greeting with cleaned name from email
+});
 
 // Show/Hide Content
 document.getElementById("toggleContentBtn").addEventListener("click", function() {
